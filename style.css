@@ -984,3 +984,79 @@ section:not(#contact) {
     font-size: 20px;
     font-weight: 500;
 }
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    /* Products grid */
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Special products */
+    .special-products-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Custom section */
+    .custom-container {
+        flex-direction: column;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
+
+
+/* Extra Small Phones */
+
+@media (max-width: 480px) {
+
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+}
+
+
